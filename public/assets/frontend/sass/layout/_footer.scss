@@ -1,0 +1,55 @@
+/*-------------------------------------------------------*/
+/* Footer
+/*-------------------------------------------------------*/
+
+.footer {
+  background-color: $bg-dark;
+
+  &__widgets {
+    padding: 65px 0;
+    font-family: $heading-font;
+
+    p {
+      color: #fff;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    ul li a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @include bp-lg-down {
+      & > .row > div:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+/* Bottom Footer
+-------------------------------------------------------*/
+
+.footer__bottom {
+  padding: 32px 0;
+  background-color: #041726;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #9AA3AB;
+  font-family: $heading-font;
+
+  a {
+    color: #9AA3AB;
+
+    &:hover {
+      color: #fff;
+    }
+  }  
+}
