@@ -12,13 +12,25 @@
 
                     </form> --}}
                     <div class="form-group">
-                        <label>Masukin Nama Kategori : </label>
-                        <input type="text" name="nama_kategori" class="form-control" required>
+                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="float-right btn btn-primary btn-rounded btn-outline">Tambah Data</button>
+                            <div id="id01" class="modal">
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <h2>Tambah Data</h2>
+                                </div>
+                                <div class="container">
+                                    <label>Masukin Nama Kategori : </label>
+                                    <input type="text" name="nama_kategori" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                </div>
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button class="float-right btn btn-primary btn-rounded btn-outline tombol-simpan">Simpan</button>
+                                </div>
+                            </form>
+                            </div>
                     </div>
-                    <div class="form-group">
-                        <button class="float-right btn btn-primary btn-rounded btn-outline tombol-simpan">Simpan</button>
-                    </div><br><br>
-
                     <div class="card-body">
                         <table id="bs4-table" class="table table-striped table-bordered">
                             <thead>

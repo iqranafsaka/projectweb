@@ -18,7 +18,7 @@ class KategoriController extends Controller
             $response = [
                 'success' => true,
                 'data' =>  $kategori,
-                'message' => 'Berhasil ditambahkan.'
+                'message' => 'Berhasil!'
             ];
         return response()->json($response, 200);
     }
@@ -30,7 +30,7 @@ class KategoriController extends Controller
      */
     public function create()
     {
-        return view('backend.kategori.index');
+        //
     }
 
     /**
@@ -51,7 +51,7 @@ class KategoriController extends Controller
         $response = [
             'success' => true,
             'data' => $kategori,
-            'message' => 'Berhasil'
+            'message' => 'Berhasil Ditambahkan!'
         ];
         return response()->json($response, 200);
     }
@@ -75,8 +75,7 @@ class KategoriController extends Controller
      */
     public function edit($id)
     {
-        $kategori = Kategori::findOrFail($id);
-        return view('backend.kategori.edit', compact('kategori'));
+        //
     }
 
     /**
@@ -98,7 +97,7 @@ class KategoriController extends Controller
         $response = [
             'success' => true,
             'data' => $kategori,
-            'message' => 'Berhasil'
+            'message' => 'Berhasil Dirubah!'
         ];
         return response()->json($response, 200);
     }
@@ -115,7 +114,7 @@ class KategoriController extends Controller
             $response = [
                 'success' => true,
                 'data' =>  $kategori,
-                'message' => 'Berhasil ditambahkan.'
+                'message' => 'Berhasil Dihapus!'
             ];
         return response()->json($response, 200);
     }

@@ -32,6 +32,7 @@
 		<link rel="stylesheet" href="{{ asset('assets/backend/assets/css/layouts/vertical/menu-type/default.css')}}">
 	<!-- ======================= THEME COLOR STYLES ===========================-->
     <link rel="stylesheet" href="{{ asset('assets/backend/assets/css/layouts/vertical/themes/theme-a.css')}}">
+	<link rel="stylesheet" href="{{ asset('assets/frontend/css/stylecustom.css')}}">
     @yield('css')
 </head>
 <body>
@@ -39,7 +40,7 @@
 	<div id="app">
 		<!-- START MENU SIDEBAR WRAPPER -->
         
-        @include('layouts.backend.sidebar')
+        {{-- SCREW THIS I DELETED SIDEBAR --}}
 
 		<!-- END MENU SIDEBAR WRAPPER -->
 		<div class="content-wrapper">
@@ -135,6 +136,7 @@
         <script src="{{ asset('assets/backend/assets/vendor/modernizr/modernizr.custom.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/jquery/dist/jquery.min.js')}}"></script>
 		<script type="text/javascript" src="{{ asset('js/kategori.js')}}"></script> {{-- JSON DATA KATEGORI --}}
+		<script type="text/javascript" src="{{ asset('js/tag.js')}}"></script> {{-- JSON DATA TAG --}}
         <script src="{{ asset('assets/backend/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/js-storage/js.storage.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/js-cookie/src/js.cookie.js')}}"></script>
