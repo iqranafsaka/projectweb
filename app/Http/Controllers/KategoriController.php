@@ -15,11 +15,11 @@ class KategoriController extends Controller
     public function index()
     {
         $kategori = Kategori::all();
-        $response = [
-            'success' => true,
-            'data' =>  $kategori,
-            'message' => 'Berhasil ditambahkan.'
-        ];
+            $response = [
+                'success' => true,
+                'data' =>  $kategori,
+                'message' => 'Berhasil ditambahkan.'
+            ];
         return response()->json($response, 200);
     }
 
@@ -94,9 +94,13 @@ class KategoriController extends Controller
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->slug = str_slug($request->nama_kategori, '-');
         $kategori->save();
-        
-        
-        return redirect()->route('kategori.index');
+
+        $response = [
+            'success' => true,
+            'data' => $kategori,
+            'message' => 'Berhasil'
+        ];
+        return response()->json($response, 200);
     }
 
     /**
@@ -108,11 +112,11 @@ class KategoriController extends Controller
     public function destroy($id)
     {
         $kategori = Kategori::findOrFail($id)->delete();
-        $response = [
-            'success' => true,
-            'data' =>  $kategori,
-            'message' => 'Berhasil ditambahkan.'
-        ];
+            $response = [
+                'success' => true,
+                'data' =>  $kategori,
+                'message' => 'Berhasil ditambahkan.'
+            ];
         return response()->json($response, 200);
     }
 }

@@ -46,15 +46,11 @@ function(){
     Route::get('/', function(){
         return view('backend.index');
     });
-    Route::resource('kategori', 'KategoriController');
     Route::resource('tag', 'TagController');
     Route::resource('artikel', 'ArtikelController');
 });
 
-
 //Ajax
-Route::get('/ajaxkategori', function(){
-    return view('backend.kategori.ajax_kategori');
+Route::get('kategori', function(){
+    return view('backend.kategori.index');
 });
-
-

@@ -4,7 +4,7 @@ $(function () {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-    var alamat = 'api/ajaxkategori'
+    var alamat = 'api/kategori'
 
     // Get Data Siswa
     $.ajax({
@@ -19,7 +19,7 @@ $(function () {
                     <tr>
                     <td>${value.nama_kategori}</td>
                     <td>${value.slug}</td>
-                    <td><button class="btn btn-danger btn-sm hapus-data" data-id="${value.id}">Hapus</button></td>
+                    <td><button class="btn btn-danger btn-rounded btn-outline btn-sm hapus-data" data-id="${value.id}">Hapus</button></td>
                     </tr>
                     `
                 )

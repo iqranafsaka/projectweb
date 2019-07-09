@@ -19,4 +19,3 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::resource('tag', 'TagController');
 Route::resource('kategori', 'KategoriController');
-Route::resource('ajaxkategori', 'KategoriController');
