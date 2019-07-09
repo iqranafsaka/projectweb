@@ -51,3 +51,10 @@ function(){
     Route::resource('artikel', 'ArtikelController');
 });
 
+
+//Ajax
+Route::get('/ajaxkategori', function(){
+    return view('backend.kategori.ajax_kategori');
+});
+
+

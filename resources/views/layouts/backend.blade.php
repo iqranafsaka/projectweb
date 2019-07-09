@@ -134,7 +134,7 @@
         <!-- ================== GLOBAL VENDOR SCRIPTS ==================-->
         <script src="{{ asset('assets/backend/assets/vendor/modernizr/modernizr.custom.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/jquery/dist/jquery.min.js')}}"></script>
-		<script type="text/javascript" src="{{ asset('assets/frontend/js/json.js')}}"></script> {{-- JSON TUTORIAL PENAMPILAN DATA --}}
+		<script type="text/javascript" src="{{ asset('js/kategori.js')}}"></script> {{-- JSON DATA KATEGORI --}}
         <script src="{{ asset('assets/backend/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/js-storage/js.storage.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/js-cookie/src/js.cookie.js')}}"></script>
