@@ -36,16 +36,14 @@ Route::get('/posts', function(){
     return view('frontend.posts');
 });
 
-Route::get('backend', function(){
-    return view('backend.index');
-});
 
-//Ajax Kategori
-Route::get('kategori', function(){
-    return view('backend.kategori.index');
-});
 
-//Ajax Tag
-Route::get('tag', function(){
-    return view('backend.tag.index');
+//Backend
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'],
+function(){
+    Route::get('/', function(){
+        return view('backend.index');
+    });
+    Route::resource('kategori', 'KategoriKontroller');
+    Route::resource('tag', 'TagKontroller');
 });

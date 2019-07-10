@@ -4,7 +4,7 @@
         <li class="nav-item nav-text dropdown dropdown-menu-md">
             <a href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <span>
-                    Dropdown
+                    Menu Items
                 </span>
                 <i class="la la-angle-down menu-arrow-down"></i>
             </a>

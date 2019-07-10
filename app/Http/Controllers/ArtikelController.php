@@ -171,4 +171,9 @@ class ArtikelController extends Controller
 
         return redirect()->route('artikel.index');
     }
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 }

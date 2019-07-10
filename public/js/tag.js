@@ -4,7 +4,7 @@ $(function () {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-    var alamat = 'api/tag'
+    var alamat = '/api/tag'
 
     // Get Data Siswa
     $.ajax({
