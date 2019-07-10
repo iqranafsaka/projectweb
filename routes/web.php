@@ -46,4 +46,5 @@ function(){
     });
     Route::resource('/kategori', 'KategoriKontroller');
     Route::resource('/tag', 'TagKontroller');
+    Route::resource('/artikel', 'ArtikelController');
 });
