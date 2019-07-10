@@ -24,9 +24,10 @@
                                     <input type="text" name="nama_kategori" class="form-control" required>
                                     </div>
                                     <div class="form-group">
+                                    {{-- <center><img src="{{ asset('assets/backend/assets/img/milos.jpg')}}" alt=""></center> --}}
                                 </div>
                                 <div class="container" style="background-color:#f1f1f1">
-                                    <button class="float-right btn btn-primary btn-rounded btn-outline tombol-simpan">Simpan</button>
+                                    <button class="float-right btn btn-info btn-rounded btn-outline tombol-simpan">Simpan</button>
                                 </div>
                             </form>
                             </div>

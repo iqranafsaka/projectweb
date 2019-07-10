@@ -51,6 +51,17 @@ $(function () {
         })
     })
 
+    $('#ubah-kategori').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var nama = button.data('nama')
+        var id = button.data('id') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-body input[name="id"]').val(id)
+        modal.find('.modal-body input[name="nama_kategori"]').val(nama)
+    })
+
 
     // Hapus Data
     $(".data-kategori").on('click', '.hapus-data', function () {
@@ -74,7 +85,8 @@ $(function () {
     })
 })
 
-// Get the modal
+
+// Get the modal 1
 var modal = document.getElementById('id01');
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
