@@ -13,8 +13,8 @@
                     <input type="text" placeholder="Filter location..." class="form-control filter-input" data-search-trigger="open">
                     <i data-q-action="clear-filter" class="icon dripicons-cross clear-filter"></i>
                     <ul class="list-reset filter-list" data-scroll="minimal-dark">
-                        <li><a class="dropdown-item" href="{{url('tag')}}">Tag</a></li>
-                        <li><a class="dropdown-item" href="{{url('kategori')}}">Kategori</a></li>
+                        <li><a class="dropdown-item" href="{{url('/tag')}}">Tag</a></li>
+                        <li><a class="dropdown-item" href="{{url('/kategori')}}">Kategori</a></li>
                         <li> <a class="dropdown-item" href="#">Artikel</a></li>
                     </ul>
                 </div>

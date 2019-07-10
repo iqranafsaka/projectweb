@@ -44,6 +44,6 @@ function(){
     Route::get('/', function(){
         return view('backend.index');
     });
-    Route::resource('kategori', 'KategoriKontroller');
-    Route::resource('tag', 'TagKontroller');
+    Route::resource('/kategori', 'KategoriKontroller');
+    Route::resource('/tag', 'TagKontroller');
 });
