@@ -136,6 +136,7 @@
         <script src="{{ asset('assets/backend/assets/vendor/modernizr/modernizr.custom.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/jquery/dist/jquery.min.js')}}"></script>
 		<script type="text/javascript" src="{{ asset('js/kategori.js')}}"></script> {{-- JSON DATA KATEGORI --}}
+		<script type="text/javascript" src="{{ asset('js/artikel.js')}}"></script> {{-- JSON DATA Artikel --}}
 		<script type="text/javascript" src="{{ asset('js/tag.js')}}"></script> {{-- JSON DATA TAG --}}
         <script src="{{ asset('assets/backend/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/js-storage/js.storage.js')}}"></script>
@@ -179,7 +180,8 @@
     ga('create', 'UA-46627904-1', 'authenticgoods.co');
     ga('send', 'pageview');
     </script>
-    @yield('js')
+	@yield('js')
+	@stack('scripts')
     </body>
     
 <!-- Mirrored from www.authenticgoods.co/themes/quantum-pro/demos/demo1/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 02:27:43 GMT -->

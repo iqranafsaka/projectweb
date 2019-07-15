@@ -7,10 +7,6 @@
             <div class="card">
                 <div class="card-header">Dashboard</div>
                 <div class="card-body">
-                    {{-- <form action="">
-
-
-                    </form> --}}
                     <div class="form-group">
                             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="float-right btn btn-primary btn-rounded btn-outline">Tambah Data</button>
                             <div id="id01" class="modal">

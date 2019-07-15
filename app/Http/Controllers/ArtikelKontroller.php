@@ -9,7 +9,7 @@ use App\Artikel;
 use Auth;
 use File;
 
-class ArtikelController extends Controller
+class ArtikelKontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,13 +18,8 @@ class ArtikelController extends Controller
      */
     public function index()
     {
-        $artikel = Artikel::with('kategori', 'tag', 'user')->get();
-            $response = [
-                'success' => true,
-                'data' =>  $artikel,
-                'message' => 'Berhasil!'
-            ];
-        return response()->json($response, 200);
+        $artikel = Artikel::orderBy('created_at', 'desc')->get();
+        return view('backend.artikel.index', compact('artikel'));
     }
 
     /**
@@ -72,12 +67,7 @@ class ArtikelController extends Controller
         $artikel->save();
         $artikel->tag()->attach($request->tag);
         
-        $response = [
-                'success' => true,
-                'data' =>  $artikel,
-                'message' => 'Berhasil!'
-            ];
-        return response()->json($response, 200);
+        return redirect()->route('artikel.index');
     }
 
     /**
@@ -99,7 +89,12 @@ class ArtikelController extends Controller
      */
     public function edit($id)
     {
-        //
+        $artikel = Artikel::findOrFail($id);
+        $kategori = Kategori::all();
+        $tag = Tag::all();
+        $selected = $artikel->tag->pluck('id')->toArray();
+        
+        return view('backend.artikel.edit', compact('artikel', 'kategori', 'tag', 'selected'));
     }
 
     /**
@@ -146,12 +141,8 @@ class ArtikelController extends Controller
         }
         $artikel->save();
         $artikel->tag()->sync($request->tag);
-        $response = [
-            'success' => true,
-            'data' => $artikel,
-            'message' => 'Berhasil Dirubah!'
-        ];
-        return response()->json($response, 200);
+
+        return redirect()->route('artikel.index');
     }
 
     /**
@@ -177,11 +168,12 @@ class ArtikelController extends Controller
         }
         $artikel->tag()->detach($artikel->id);
         $artikel->delete();
-        $response = [
-            'success' => true,
-            'data' => $artikel,
-            'message' => 'Berhasil Dihapus!'
-        ];
-        return response()->json($response, 200);
+
+        return redirect()->route('artikel.index');
+    }
+
+    public function __construct()
+    {
+        $this->middleware('auth');
     }
 }

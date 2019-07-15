@@ -15,7 +15,7 @@
                     <ul class="list-reset filter-list" data-scroll="minimal-dark">
                         <li><a class="dropdown-item" href="{{ route('tag.index') }}">Tag</a></li>
                         <li><a class="dropdown-item" href="{{ route('kategori.index') }}">Kategori</a></li>
-                        <li> <a class="dropdown-item" href="#">Artikel</a></li>
+                        <li> <a class="dropdown-item" href="{{ route('artikel.index') }}">Artikel</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,8 +38,8 @@
                     <div class="media d-user">
                         <img class="align-self-center mr-3 w-40 rounded-circle" src="{{ asset('assets/backend/assets/img/avatars/1.jpg')}}" alt="Albert Einstein">
                         <div class="media-body">
-                            <h5 class="mt-0 mb-0">Albert Einstein</h5>
-                            <span>support@authenticgoods.co</span>
+                            <h5 class="mt-0 mb-0">{{ Auth::user()->name }}</h5>
+                            <span>{{ Auth::user()->email }}</span>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,15 @@
                 <a class="dropdown-item" href="pages.my-account.html"><i class="icon dripicons-gear"></i> Account Settings </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#"><i class="icon dripicons-lock"></i> Lock Account</a>
-                <a class="dropdown-item" href="auth.sign-in.html"><i class="icon dripicons-lock-open"></i> Sign Out</a>
+
+
+                {{-- Logout --}}
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <i class="icon dripicons-lock-open"></i>{{ __('Logout') }}
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
             </div>
         </li>
     </ul>
