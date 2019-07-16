@@ -24,7 +24,6 @@ $(function () {
                     <td>${value.kategori.nama_kategori}</td>
                     <td>${value.user.name}</td>
                     <td>${value.tag[0].nama_tag}</td>
-                    <td>${value.slug}</td>
                     <td><img src="../assets/img/artikel/${value.foto}" 
                         style="width:115px; height:80px;" alt="foto">
                     </td>

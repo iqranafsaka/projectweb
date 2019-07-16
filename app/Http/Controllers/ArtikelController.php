@@ -50,7 +50,7 @@ class ArtikelController extends Controller
         $request->validate([
             'judul' => 'required|unique:artikels',
             'konten' => 'required|min:50',
-            'foto' => 'required|mimes:jpeg,jpg,png,gif|required|max:2048',
+            'foto' => 'required|mimes:jpeg,jpg,png,gif|required|max:2560',
             'id_kategori' => 'required',
             'tag' => 'required'
         ]);

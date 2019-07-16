@@ -81,69 +81,7 @@
     
     <!-- end navigation -->
     
-    <div class="main-container" id="main-container">
-        
-      <!-- Hero Slider -->
-      <section class="hero">
-        <div id="owl-hero" class="owl-carousel owl-theme">        
-
-          <div class="hero__slide">
-            <article class="hero__slide-entry entry">
-              <div class="thumb-bg-holder" style="background-image: url({{ asset('assets/frontend/img/blog/featured_img_1.jpg')}})">
-                <a href="single-post.html" class="thumb-url"></a>
-                <div class="bottom-gradient"></div>
-              </div>
-              
-              <div class="thumb-text-holder">
-                <a href="categories.html" class="entry__meta-category entry__meta-category--label">Startups</a>   
-                <h2 class="thumb-entry-title">
-                  <a href="single-post.html">Technology's impact on marketing</a>
-                </h2>
-              </div>
-            </article>          
-          </div>
-
-          <div class="hero__slide">
-            <article class="hero__slide-entry entry">
-              <div class="thumb-bg-holder" style="background-image: url({{ asset('assets/frontend/img/blog/featured_img_2.jpg')}})">
-                <a href="single-post.html" class="thumb-url"></a>
-                <div class="bottom-gradient"></div>
-              </div>
-              
-              <div class="thumb-text-holder">
-                <a href="categories.html" class="entry__meta-category entry__meta-category--label">Startups</a>   
-                <h2 class="thumb-entry-title">
-                  <a href="single-post.html">the Age of Artificial Intelligence</a>
-                </h2>
-              </div>
-            </article>          
-          </div>
-
-          <div class="hero__slide">
-            <article class="hero__slide-entry entry">
-              <div class="thumb-bg-holder" style="background-image: url({{ asset('assets/frontend/img/blog/featured_img_3.jpg')}})">
-                <a href="single-post.html" class="thumb-url"></a>
-                <div class="bottom-gradient"></div>
-              </div>
-              
-              <div class="thumb-text-holder">
-                <a href="categories.html" class="entry__meta-category entry__meta-category--label">Startups</a>   
-                <h2 class="thumb-entry-title">
-                  <a href="single-post.html">The Most Powerful Thing You Can Do Is Be Yourself</a>
-                </h2>
-              </div>
-            </article>          
-          </div>
-          
-        </div> <!-- end owl -->
-      </section> <!-- end hero slider -->
-
-      <!-- Ad Banner 728 -->
-      <div class="text-center">
-        <a href="#">
-          <img src="{{ asset('assets/frontend/img/blog/placeholder_728.jpg')}}" alt="">
-        </a>
-      </div>    
+    <div class="main-container" id="main-container">  
 
       <!-- Content -->
 
@@ -229,6 +167,7 @@
   
   <!-- jQuery Scripts -->
   <script type="text/javascript" src="{{ asset('assets/frontend/js/jquery.min.js')}}"></script>
+  <script type="text/javascript" src="{{ asset('js/frontend.js')}}"></script> {{-- JSON DATA FRONTEND JS --}}
   <script type="text/javascript" src="{{ asset('assets/frontend/js/bootstrap.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('assets/frontend/js/easing.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('assets/frontend/js/owl-carousel.min.js')}}"></script>

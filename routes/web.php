@@ -14,28 +14,16 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//Contoh penampilan
-Route::get('/', function(){
-    return view('frontend.index');
-});
 
-//Contoh Penampilan About us
-Route::get('/about', function(){
-    return view('frontend.about');
+//Route Frontend
+Route::group(['prefix' => '/'], function(){
+    Route::get('/', 'FrontendController@index');
+    Route::get('about', 'FrontendController@about');
+    Route::get('blog', 'FrontendController@blog');
+    Route::get('blog/{artikel}', 'FrontendController@singleblog');
+    Route::get('blog-tag/{tag}', 'FrontendController@blogtag');
+    Route::get('blog-kategori/{kategori}', 'FrontendController@blogkategori');
 });
-
-Route::get('/indexcomu', function(){
-    return view('frontend.indexcomu');
-});
-
-Route::get('/discussion', function(){
-    return view('frontend.discussion');
-});
-
-Route::get('/posts', function(){
-    return view('frontend.posts');
-});
-
 
 
 //Backend

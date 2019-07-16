@@ -18,7 +18,7 @@ class ArtikelKontroller extends Controller
      */
     public function index()
     {
-        $artikel = Artikel::orderBy('created_at', 'desc')->get();
+        $artikel = Artikel::with('tag', 'kategori', 'user')->get();
         return view('backend.artikel.index', compact('artikel'));
     }
 
