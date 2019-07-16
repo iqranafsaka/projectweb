@@ -19,12 +19,16 @@
         </div>
 
         <div class="col-lg-3 col-md-6">
-          <h4 class="widget-title white">twitter feed</h4>
+          {{-- <h4 class="widget-title white">twitter feed</h4>
           <div class="tweets-container">
             <div id="tweets"></div>                  
-          </div>
+          </div> --}}
         </div>
         
+
+        <div class="col-lg-3 col-md-6">
+          
+        </div>
 
         <div class="col-lg-3 col-md-6">
           <div class="widget widget_nav_menu">
@@ -36,26 +40,6 @@
               <li><a href="#">Wordpress Themes</a></li>
               <li><a href="#">Advertise</a></li>
             </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="widget widget__newsletter">
-            <h4 class="widget-title white">subscribe to deothemes</h4>
-            <p>Join our Newsletter</p>
-
-            <form class="mc4wp-form" method="post">
-              <div class="mc4wp-form-fields">
-                <p>
-                  <i class="mc4wp-form-icon ui-email"></i>
-                  <input type="email" name="EMAIL" placeholder="Your email" required="">
-                </p>
-                <p>
-                  <input type="submit" class="btn btn-md btn-color" value="Subscribe">
-                </p>
-              </div>
-            </form>
-            
           </div>
         </div>
 

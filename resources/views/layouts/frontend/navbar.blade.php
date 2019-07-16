@@ -34,9 +34,14 @@
                 </ul>
               </li>
 
-              <li>
-                <a href="/posts">Posts</a>
-              </li>
+              <li class="nav__dropdown">
+                  <a href="/indexcomu">Posts</a>
+                  <ul class="nav__dropdown-menu">
+                    <li><a href="/postgame">Game</a></li>
+                    <li><a href="/postmovie">Movie</a></li>
+                    <li><a href="/postwiki">Wikis</a></li>
+                  </ul>
+                </li>
 
               <li>
                 <a href="/about">About Us</a>
@@ -60,10 +65,6 @@
               <a class="social-youtube" href="#" target="_blank">
                 <i class="ui-youtube"></i>
               </a>
-            </div>
-
-            <div class="nav__right-item">
-              <a href="" class="nav__subscribe" data-toggle="modal" data-target="#subscribe-modal">Subscribe</a>
             </div>
 
             <!-- Search -->
