@@ -23,7 +23,7 @@
               </div>
           @endforeach
         </div> 
-        <!-- end Owl -->
+        <!-- end owl -->
       </section> 
       <!-- end hero slider -->
 
