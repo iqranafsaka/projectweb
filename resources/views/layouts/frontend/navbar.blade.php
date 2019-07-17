@@ -15,7 +15,7 @@
 
           <!-- Logo -->
           <a href="/" class="logo">
-            <img class="logo__img" src="{{ asset('assets/frontend/img/logo_light.png')}}" srcset="{{ asset('assets/frontend/img/logo_light.png')}} 1x, {{ asset('assets/frontend/img/logo_light@2x.png')}} 2x" alt="logo">
+            <img class="logo__img" src="{{ asset('assets/img/logo_aboutfan.png')}}" srcset="{{ asset('assets/img/logo_aboutfan.png')}} 1x, {{ asset('assets/img/logo_aboutfan.png')}} 2x" alt="logo">
           </a>
 
           <!-- Nav-wrap -->
@@ -35,7 +35,7 @@
               </li>
 
               <li class="nav__dropdown">
-                  <a href="/indexcomu">Posts</a>
+                  <a href="/posts">Posts</a>
                   <ul class="nav__dropdown-menu">
                     <li><a href="/postgame">Game</a></li>
                     <li><a href="/postmovie">Movie</a></li>

@@ -8,7 +8,7 @@
           @foreach ($artikel as $data)
             <div class="hero__slide">
                     <article class="hero__slide-entry entry">
-                      <div class="thumb-bg-holder" style="background-image: url({{asset('assets/img/artikel/' . $data->foto)}}">
+                      <div class="thumb-bg-holder" style="background-image: url({{asset('assets/img/artikel/' . $data->foto)}})">
                         <a href="single-post.html" class="thumb-url"></a>
                         <div class="bottom-gradient"></div>
                       </div>
@@ -46,11 +46,11 @@
                 <!-- Posts -->
                 <div class="col-md-8 blog__content mb-30">
                     <h3 class="section-title">Latest Posts</h3>
-
                     <article class="entry post-list latest-data">                
                         {{-- ISI DARI post-data --}}
                     </article>
-                </div> <!-- end posts -->
+                </div> 
+                <!-- end posts -->
 
                 <!-- Sidebar -->
                 <aside class="col-md-4 sidebar sidebar--right">
@@ -58,9 +58,9 @@
                     <!-- Widget Popular Posts -->
                     <div class="widget widget-popular-posts">
                         <h4 class="widget-title sidebar__widget-title">Popular Posts</h4>
-                        <ul class="widget-popular-posts__list popular-data">
-                            {{-- ISI DARI popular-data --}}
-                        </ul>
+                          <ul class="widget-popular-posts__list popular-data">
+                              {{-- ISI DARI popular-data --}}
+                          </ul>
                     </div> <!-- end widget popular posts -->
 
                     <!-- Widget socials -->

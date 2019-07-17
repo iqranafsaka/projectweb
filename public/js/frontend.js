@@ -22,7 +22,7 @@ $(function () {
                     <div class="entry__img-holder post-list__img-holder">
                         <a href="single-post.html">
                             <div class="thumb-container">
-                            <img data-src="../assets/img/artikel/${value.foto}" src="../assets/img/artikel/${value.foto}" class="entry__img lazyload" alt="" />
+                            <img src="../assets/img/artikel/${value.foto}" class="entry__img lazyload" alt="" />
                             </div>
                         </a>
                         </div>
@@ -62,6 +62,7 @@ $(function () {
             $.each(berhasil.data, function (key, value) {
                 $(".popular-data").append(
                     `
+                    <li>
                     <article class="clearfix">
                         <div class="widget-popular-posts__img-holder">
                             <div class="thumb-container">
@@ -76,6 +77,7 @@ $(function () {
                             </h3>
                         </div>                      
                     </article>
+                    </li>
                     `
                 )
             })

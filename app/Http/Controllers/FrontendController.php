@@ -17,7 +17,13 @@ class FrontendController extends Controller
     public function about(){
         return view('frontend.about');
     }
+    public function indexcomu(){
+        $artikel = Artikel::with('tag', 'kategori', 'user')->get();
+        return view('frontend.indexcomu', compact('artikel'));
+    } 
 
+
+    
     public function blog(){
         $artikel = Artikel::orderBy('created_at', 'desc')->paginate(3);
         $kategori = Kategori::all();

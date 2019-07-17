@@ -34,11 +34,10 @@
           <div class="widget widget_nav_menu">
             <h4 class="widget-title white">Useful Links</h4>
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Wordpress Themes</a></li>
-              <li><a href="#">Advertise</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/indexcomu">Community</a></li>
+              <li><a href="/posts">Posts</a></li>
+              <li><a href="/about">About Us</a></li>
             </ul>
           </div>
         </div>
