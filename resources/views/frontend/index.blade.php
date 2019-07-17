@@ -9,14 +9,14 @@
             <div class="hero__slide">
                     <article class="hero__slide-entry entry">
                       <div class="thumb-bg-holder" style="background-image: url({{asset('assets/img/artikel/' . $data->foto)}})">
-                        <a href="single-post.html" class="thumb-url"></a>
+                        <a href="{{url( 'posts/' . $data->slug )}}" class="thumb-url"></a>
                         <div class="bottom-gradient"></div>
                       </div>
                       
                       <div class="thumb-text-holder">
                         <a href="categories.html" class="entry__meta-category entry__meta-category--label">{{$data->kategori->nama_kategori}}</a>   
                             <h2 class="thumb-entry-title">
-                        <a href="single-post.html">{{$data->judul}}</a>
+                        <a href="{{url( 'posts/' . $data->slug )}}">{{$data->judul}}</a>
                         </h2>
                       </div>
                   </article>          

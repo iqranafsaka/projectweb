@@ -20,7 +20,7 @@ $(function () {
                 $(".latest-data").append(
                     `
                     <div class="entry__img-holder post-list__img-holder">
-                        <a href="single-post.html">
+                        <a href="posts/${value.slug}">
                             <div class="thumb-container">
                             <img src="../assets/img/artikel/${value.foto}" class="entry__img lazyload" alt="" />
                             </div>
@@ -31,7 +31,7 @@ $(function () {
                         <div class="entry__header">
                             <a href="categories.html" class="entry__meta-category">${value.kategori.nama_kategori}</a>
                             <h2 class="entry__title">
-                            <a href="single-post.html">${value.judul}</a>
+                            <a href="posts/${value.slug}">${value.judul}</a>
                             </h2>
                             <ul class="entry__meta">
                             <li class="entry__meta-date">
@@ -66,14 +66,14 @@ $(function () {
                     <article class="clearfix">
                         <div class="widget-popular-posts__img-holder">
                             <div class="thumb-container">
-                            <a href="#">
-                                <img src="../assets/img/artikel/${value.foto}" alt="" class="lazyload">
+                            <a href="/posts/${value.slug}">
+                                <img src="../assets/img/artikel/${value.foto}" alt="" style="height:45px;" class="lazyload">
                             </a>
                             </div>
                         </div>
                         <div class="widget-popular-posts__entry">
                             <h3 class="widget-popular-posts__entry-title">
-                            <a href="single-post.html">${value.judul}</a>
+                            <a href="/posts/${value.slug}">${value.judul}</a>
                             </h3>
                         </div>                      
                     </article>

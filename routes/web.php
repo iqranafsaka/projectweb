@@ -21,11 +21,10 @@ Route::group(['prefix' => '/'], function(){
     Route::get('about', 'FrontendController@about');
     // Route::get('indexcomu', 'FrontendController@indexcomu');
     
-
-    Route::get('blog', 'FrontendController@blog');
-    Route::get('blog/{artikel}', 'FrontendController@singleblog');
-    Route::get('blog-tag/{tag}', 'FrontendController@blogtag');
-    Route::get('blog-kategori/{kategori}', 'FrontendController@blogkategori');
+    Route::get('posts', 'FrontendController@blog');
+    Route::get('posts/{artikel}', 'FrontendController@singleblog');
+    Route::get('posts-tag/{tag}', 'FrontendController@blogtag');
+    Route::get('posts-kategori/{kategori}', 'FrontendController@blogkategori');
 });
 
 

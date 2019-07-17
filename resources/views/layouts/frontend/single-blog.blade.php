@@ -107,7 +107,8 @@
 
   
   <!-- jQuery Scripts -->
-  <script type="text/javascript" src="{{ asset('assets/frontend/js/jquery.min.js')}}"></script>
+  <script type="text/javascript" src="{{ asset('assets/frontend/js/jquery.min.js')}}"></script>\
+  <script type="text/javascript" src="{{ asset('js/frontend.js')}}"></script> {{-- JSON DATA FRONTEND JS --}}
   <script type="text/javascript" src="{{ asset('assets/frontend/js/bootstrap.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('assets/frontend/js/easing.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('assets/frontend/js/owl-carousel.min.js')}}"></script>
