@@ -42,7 +42,11 @@
                     <p>{!! $artikel->konten !!}</p>
                 <!-- tags -->
                 <div class="entry__tags">
-                  Tags: <a href="#" rel="tag">mobile</a><a href="#" rel="tag">gadgets</a><a href="#" rel="tag">satelite</a>
+                    <h5>Tags :
+                        @foreach ($artikel->tag as $data)
+                            <a href="/posts-tag/{{ $data->slug }}">{{ $data->nama_tag }}</a>
+                        @endforeach
+                    </h5>
                 </div> <!-- end tags -->
 
               </div> <!-- end entry article -->
@@ -53,6 +57,7 @@
 
           <!-- Comments -->
           
+          <div id="disqus_thread"></div>
           
           <!-- end comments -->
 
@@ -119,4 +124,23 @@
       </div> <!-- end row -->
     </div> <!-- end container -->
   </section>
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = 'http://localhost:8000/blog/{{ $artikel->slug }}', 'http://iqranafsaka01.herokuapp.com/posts/{{ $artikel->slug }}';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = {{ $artikel->id }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://aboutfan.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>             
 @endsection
