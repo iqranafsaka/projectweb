@@ -61,38 +61,17 @@
                           <ul class="widget-popular-posts__list popular-data">
                               {{-- ISI DARI popular-data --}}
                           </ul>
-                    </div> <!-- end widget popular posts -->
+                    </div>
+                    <!-- end widget popular posts -->
 
                     <!-- Widget socials -->
                     <div class="widget widget-socials">
-                        <h4 class="widget-title">Keep up with Neotech</h4>
-                        <ul class="socials">
-                        <li>
-                            <a class="social-facebook" href="#" title="facebook" target="_blank">
-                            <i class="ui-facebook"></i>
-                            <span class="socials__text">Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-twitter" href="#" title="twitter" target="_blank">
-                            <i class="ui-twitter"></i>
-                            <span class="socials__text">Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-google-plus" href="#" title="google" target="_blank">
-                            <i class="ui-google"></i>
-                            <span class="socials__text">Google+</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-instagram" href="#" title="instagram" target="_blank">
-                            <i class="ui-instagram"></i>
-                            <span class="socials__text">Instagram</span>
-                            </a>
-                        </li>
-                        </ul>
-                    </div> <!-- end widget socials -->
+                      <h4 class="widget-title">Keep up with Neotech</h4>
+                      <ul class="socials social">
+                        {{-- isi dari AJAX SOCIAL --}}
+                      </ul>
+                    </div> 
+                    <!-- end widget socials -->
 
                     <!-- Widget Banner -->
                     <div class="widget widget_media_image">

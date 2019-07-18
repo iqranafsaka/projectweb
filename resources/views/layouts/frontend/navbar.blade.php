@@ -36,11 +36,11 @@
 
               <li class="nav__dropdown">
                   <a href="/posts">Posts</a>
-                  <ul class="nav__dropdown-menu">
+                  {{-- <ul class="nav__dropdown-menu">
                     <li><a href="/postgame">Game</a></li>
                     <li><a href="/postmovie">Movie</a></li>
                     <li><a href="/postwiki">Wikis</a></li>
-                  </ul>
+                  </ul> --}}
                 </li>
 
               <li>

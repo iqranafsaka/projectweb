@@ -94,145 +94,41 @@
               <h1 class="page-title">Posts</h1>
 
               <div class="row mt-30">
-
-                <div class="col-md-6">
-                  <article class="entry">                
-                    <div class="entry__img-holder">
-                      <a href="single-post.html">
-                        <div class="thumb-container">
-                          <img data-src="{{ asset('assets/frontend/img/blog/grid_post_img_1.jpg')}}" src="{{ asset('assets/frontend/img/blog/grid_post_img_1.jpg')}}" class="entry__img lazyload" alt="" />
+                @foreach ($artikel as $data)
+                  <div class="col-md-6 ">
+                      <article class="entry">                
+                          <div class="entry__img-holder">
+                          <a href="/posts/{{$data->slug}}">
+                              <div class="thumb-container">
+                              <img src="{{ asset('assets/img/artikel/' . $data->foto . '') }}" class="entry__img lazyload" style="height:200px" alt="" />
+                          </div>
+                          </a>
+                      </div>
+      
+                      <div class="entry__body">
+                        <div class="entry__header">
+                          <a href="/posts-kategori/{{$data->kategori->slug}}" class="entry__meta-category">{{$data->kategori->nama_kategori}}</a>
+                          <h2 class="entry__title">
+                            <a href="/posts/{{$data->slug}}">{{$data->judul}}</a>
+                          </h2>
+                          <ul class="entry__meta">
+                            <li class="entry__meta-date">
+                              {{$data->created_at->format('D M Y')}}
+                            </li>
+                            <li class="entry__meta-author">
+                              by {{$data->user->name}}
+                            </li>
+                          </ul>
                         </div>
-                      </a>
-                    </div>
-
-                    <div class="entry__body">
-                      <div class="entry__header">
-                        <a href="categories.html" class="entry__meta-category">devices</a>
-                        <h2 class="entry__title">
-                          <a href="single-post.html">Satelite cost tens of millions or even hundreds of millions of dollars to build</a>
-                        </h2>
-                        <ul class="entry__meta">
-                          <li class="entry__meta-date">
-                            21 October, 2017
-                          </li>
-                          <li class="entry__meta-author">
-                            by <a href="#">DeoThemes</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="entry__excerpt">
-                        <p>Point of Sale hardware, the till at a shop check out, has become very complex over the past ten years. Modern POS hardware includes the cash till, bar-code readers...</p>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-
-                <div class="col-md-6">
-                  <article class="entry">                
-                    <div class="entry__img-holder">
-                      <a href="single-post.html">
-                        <div class="thumb-container">
-                          <img data-src="{{ asset('assets/frontend/img/blog/grid_post_img_2.jpg')}}" src="{{ asset('assets/frontend/img/blog/grid_post_img_2.jpg')}}" class="entry__img lazyload" alt="" />
+                        <div class="entry__excerpt">
+                          <p>{!! str_limit($data->konten, 300) !!}</p>
                         </div>
-                      </a>
-                    </div>
-
-                    <div class="entry__body">
-                      <div class="entry__header">
-                        <a href="categories.html" class="entry__meta-category">tesla cars</a>
-                        <h2 class="entry__title">
-                          <a href="single-post.html">Advance Uber’s mission of bringing safe, reliable transportation to everyone</a>
-                        </h2>
-                        <ul class="entry__meta">
-                          <li class="entry__meta-date">
-                            21 October, 2017
-                          </li>
-                          <li class="entry__meta-author">
-                            by <a href="#">DeoThemes</a>
-                          </li>
-                        </ul>
                       </div>
-                      <div class="entry__excerpt">
-                        <p>Point of Sale hardware, the till at a shop check out, has become very complex over the past ten years. Modern POS hardware includes the cash till, bar-code readers...</p>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-
-                <div class="col-md-6">
-                  <article class="entry">                
-                    <div class="entry__img-holder">
-                      <a href="single-post.html">
-                        <div class="thumb-container">
-                          <img data-src="{{ asset('assets/frontend/img/blog/grid_post_img_3.jpg')}}" src="{{ asset('assets/frontend/img/blog/grid_post_img_3.jpg')}}" class="entry__img lazyload" alt="" />
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="entry__body">
-                      <div class="entry__header">
-                        <a href="categories.html" class="entry__meta-category">robotics</a>
-                        <h2 class="entry__title">
-                          <a href="single-post.html">VR and playable on a console makes it a great option to PC related VR headsets</a>
-                        </h2>
-                        <ul class="entry__meta">
-                          <li class="entry__meta-date">
-                            21 October, 2017
-                          </li>
-                          <li class="entry__meta-author">
-                            by <a href="#">DeoThemes</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="entry__excerpt">
-                        <p>Point of Sale hardware, the till at a shop check out, has become very complex over the past ten years. Modern POS hardware includes the cash till, bar-code readers...</p>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-
-                <div class="col-md-6">
-                  <article class="entry">                
-                    <div class="entry__img-holder">
-                      <a href="single-post.html">
-                        <div class="thumb-container">
-                          <img data-src="{{ asset('assets/frontend/img/blog/grid_post_img_4.jpg')}}" src="{{ asset('assets/frontend/img/blog/grid_post_img_4.jpg')}}" class="entry__img lazyload" alt="" />
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="entry__body">
-                      <div class="entry__header">
-                        <a href="categories.html" class="entry__meta-category">aircraft</a>
-                        <h2 class="entry__title">
-                          <a href="single-post.html">NASA is best known for building rockets and spacecraft</a>
-                        </h2>
-                        <ul class="entry__meta">
-                          <li class="entry__meta-date">
-                            21 October, 2017
-                          </li>
-                          <li class="entry__meta-author">
-                            by <a href="#">DeoThemes</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="entry__excerpt">
-                        <p>Point of Sale hardware, the till at a shop check out, has become very complex over the past ten years. Modern POS hardware includes the cash till, bar-code readers...</p>
-                      </div>
-                    </div>
-                  </article>
-                </div>
+                    </article>
+                  </div>
+                @endforeach
+                {{ $artikel->links() }}
               </div>
-
-              <!-- Pagination -->
-              <div class="pagination clearfix">
-                <div class="pagination__link right">
-                  <a href="#" class="btn btn-lg btn-color">
-                    <span>Older Posts</span>
-                  </a>
-                </div>
-              </div>
-              
             </div> <!-- end posts -->
 
             <!-- Sidebar -->
@@ -241,141 +137,40 @@
               <!-- Widget Popular Posts -->
               <div class="widget widget-popular-posts">
                 <h4 class="widget-title sidebar__widget-title">Popular Posts</h4>
-                <ul class="widget-popular-posts__list">
-                  <li>
-                    <article class="clearfix">
-                      <div class="widget-popular-posts__img-holder">
-                        <span class="widget-popular-posts__number">1</span>
-                        <div class="thumb-container">
-                          <a href="single-post.html">
-                            <img data-src="{{ asset('assets/frontend/img/blog/popular_post_1.jpg')}}" src="{{ asset('assets/frontend/img/blog/popular_post_1.jpg')}}" alt="" class="lazyload">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="widget-popular-posts__entry">
-                        <h3 class="widget-popular-posts__entry-title">
-                          <a href="single-post.html">How to get better Apple Watch battery life</a>
-                        </h3>
-                      </div>                      
-                    </article>
-                  </li>
-                  <li>
-                    <article class="clearfix">
-                      <div class="widget-popular-posts__img-holder">
-                        <span class="widget-popular-posts__number">2</span>
-                        <div class="thumb-container">
-                          <a href="single-post.html">
-                            <img data-src="{{ asset('assets/frontend/img/blog/popular_post_2.jpg')}}" src="{{ asset('assets/frontend/img/blog/popular_post_2.jpg')}}" alt="" class="lazyload">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="widget-popular-posts__entry">
-                        <h3 class="widget-popular-posts__entry-title">
-                          <a href="single-post.html">8 Hidden Costs of Starting and Running a Business</a>
-                        </h3>
-                      </div>                      
-                    </article>
-                  </li>
-                  <li>
-                    <article class="clearfix">
-                      <div class="widget-popular-posts__img-holder">
-                        <span class="widget-popular-posts__number">3</span>
-                        <div class="thumb-container">
-                          <a href="single-post.html">
-                            <img data-src="{{ asset('assets/frontend/img/blog/popular_post_3.jpg')}}" src="{{ asset('assets/frontend/img/blog/popular_post_3.jpg')}}" alt="" class="lazyload">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="widget-popular-posts__entry">
-                        <h3 class="widget-popular-posts__entry-title">
-                          <a href="single-post.html">The iPhone of Drones Is Being Built by This Teenager</a>
-                        </h3>
-                      </div>                      
-                    </article>
-                  </li>
-                  <li>
-                    <article class="clearfix">
-                      <div class="widget-popular-posts__img-holder">
-                        <span class="widget-popular-posts__number">4</span>
-                        <div class="thumb-container">
-                          <a href="single-post.html">
-                            <img data-src="{{ asset('assets/frontend/img/blog/popular_post_4.jpg')}}" src="{{ asset('assets/frontend/img/blog/popular_post_4.jpg')}}" alt="" class="lazyload">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="widget-popular-posts__entry">
-                        <h3 class="widget-popular-posts__entry-title">
-                          <a href="single-post.html">Check Out This Video of Apple's New Futuristic Campus, Shot by a Drone</a>
-                        </h3>
-                      </div>                      
-                    </article>
-                  </li>
-                  <li>
-                    <article class="clearfix">
-                      <div class="widget-popular-posts__img-holder">
-                        <span class="widget-popular-posts__number">5</span>
-                        <div class="thumb-container">
-                          <a href="single-post.html">
-                            <img data-src="{{ asset('assets/frontend/img/blog/popular_post_5.jpg')}}" src="{{ asset('assets/frontend/img/blog/popular_post_5.jpg')}}" alt="" class="lazyload">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="widget-popular-posts__entry">
-                        <h3 class="widget-popular-posts__entry-title">
-                          <a href="single-post.html">The New Media Moguls of Southeast Asia</a>
-                        </h3>
-                      </div>                      
-                    </article>
-                  </li>
-                </ul>
-              </div> <!-- end widget popular posts -->
+                  <ul class="widget-popular-posts__list popular-data">
+                      {{-- ISI DARI popular-data --}}
+                  </ul>
+            </div>
+            <!-- end widget popular posts -->
 
-              <!-- Widget Newsletter -->
-              <div class="widget widget_mc4wp_form_widget">
-                <h4 class="widget-title">Subscribe for Neotech news and receive daily updates</h4>
-                <form id="mc4wp-form-1" class="mc4wp-form" method="post">
-                  <div class="mc4wp-form-fields">
-                    <p>
-                      <i class="mc4wp-form-icon ui-email"></i>
-                      <input type="email" name="EMAIL" placeholder="Your email" required="">
-                    </p>
-                    <p>
-                      <input type="submit" class="btn btn-md btn-color" value="Subscribe">
-                    </p>
-                  </div>
-                </form>
-              </div> <!-- end widget newsletter -->
+          <!-- kategori -->
+          <div class="entry__tags">
+              <h5>Kategori :
+                  @foreach ($kategori as $data)
+                      <a href="/posts-kategori/{{ $data->slug }}">{{ $data->nama_kategori }}</a>
+                  @endforeach
+              </h5>
+          </div> 
+          <!-- end kategori -->
 
-              <!-- Widget socials -->
-              <div class="widget widget-socials">
-                <h4 class="widget-title">Keep up with Neotech</h4>
-                <ul class="socials">
-                  <li>
-                    <a class="social-facebook" href="#" title="facebook" target="_blank">
-                      <i class="ui-facebook"></i>
-                      <span class="socials__text">Facebook</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-twitter" href="#" title="twitter" target="_blank">
-                      <i class="ui-twitter"></i>
-                      <span class="socials__text">Twitter</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-google-plus" href="#" title="google" target="_blank">
-                      <i class="ui-google"></i>
-                      <span class="socials__text">Google+</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-instagram" href="#" title="instagram" target="_blank">
-                      <i class="ui-instagram"></i>
-                      <span class="socials__text">Instagram</span>
-                    </a>
-                  </li>
-                </ul>
-              </div> <!-- end widget socials -->
+          <!-- tags -->
+            <div class="entry__tags">
+              <h5>Tag :
+                  @foreach ($tag as $data)
+                      <a href="/posts-tag/{{ $data->slug }}">{{ $data->nama_tag }}</a>
+                  @endforeach
+              </h5>
+          </div> 
+          <!-- end tags -->
+
+          <!-- Widget socials -->
+          <div class="widget widget-socials">
+            <h4 class="widget-title">Keep up with Neotech</h4>
+            <ul class="socials social">
+              {{-- isi dari AJAX SOCIAL --}}
+            </ul>
+          </div> 
+          <!-- end widget socials -->
 
               <!-- Widget Banner -->
               <div class="widget widget_media_image">
@@ -408,6 +203,7 @@
   
   <!-- jQuery Scripts -->
   <script type="text/javascript" src="{{ asset('assets/frontend/js/jquery.min.js')}}"></script>
+  <script type="text/javascript" src="{{ asset('js/frontend.js')}}"></script> {{-- JSON DATA FRONTEND JS --}}
   <script type="text/javascript" src="{{ asset('assets/frontend/js/bootstrap.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('assets/frontend/js/easing.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('assets/frontend/js/owl-carousel.min.js')}}"></script>
