@@ -91,7 +91,7 @@
               
             <!-- Posts -->
             <div class="col-md-8 blog__content mb-30">
-              <h1 class="page-title">Devices</h1>
+              <h1 class="page-title">Posts</h1>
 
               <div class="row mt-30">
 
