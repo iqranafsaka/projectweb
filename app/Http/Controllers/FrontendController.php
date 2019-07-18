@@ -21,7 +21,7 @@ class FrontendController extends Controller
     //     $artikel = Artikel::with('tag', 'kategori', 'user')->get();
     //     return view('frontend.indexcomu', compact('artikel'));
     // } 
-    //cek
+    //Cek
 
 
     
