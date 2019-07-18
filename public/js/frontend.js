@@ -136,7 +136,7 @@ $(function () {
         url: alamat,
         method: "GET",
         dataType: "json",
-        success: function (berhasil) {
+        success: function () {
             // console.log(berhasil)
                 $(".social").append(
                     `
