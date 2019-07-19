@@ -25,7 +25,7 @@ class FrontendController extends Controller
 
     
     public function blog(){
-        $artikel = Artikel::orderBy('created_at', 'desc')->paginate(4);
+        $artikel = Artikel::orderBy('created_at', 'desc')->paginate(5);
         $kategori = Kategori::all();
         $tag = Tag::all();
         return view('frontend.posts', compact('artikel', 'kategori', 'tag'));

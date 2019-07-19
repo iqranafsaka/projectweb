@@ -22,7 +22,7 @@ class ArtikelController extends Controller
             $response = [
                 'success' => true,
                 'data' =>  $artikel,
-                'message' => 'Berhasil!'
+                'message' => 'Proses..'
             ];
         return response()->json($response, 200);
     }
@@ -75,7 +75,7 @@ class ArtikelController extends Controller
         $response = [
                 'success' => true,
                 'data' =>  $artikel,
-                'message' => 'Berhasil!'
+                'message' => 'Proses..!'
             ];
         return response()->json($response, 200);
     }
@@ -149,7 +149,7 @@ class ArtikelController extends Controller
         $response = [
             'success' => true,
             'data' => $artikel,
-            'message' => 'Berhasil Dirubah!'
+            'message' => 'Proses..'
         ];
         return response()->json($response, 200);
     }
@@ -180,7 +180,7 @@ class ArtikelController extends Controller
         $response = [
             'success' => true,
             'data' => $artikel,
-            'message' => 'Berhasil Dihapus!'
+            'message' => 'Proses..'
         ];
         return response()->json($response, 200);
     }

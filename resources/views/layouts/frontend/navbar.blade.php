@@ -56,15 +56,15 @@
 
             <!-- Socials -->
             <div class="nav__right-item socials socials--nobase nav__socials "> 
-              <a class="social-facebook" href="#" target="_blank">
+              <a class="social-facebook" href="https://web.facebook.com/nonocheese" target="_blank">
                 <i class="ui-facebook"></i>
               </a>
-              <a class="social-twitter" href="#" target="_blank">
+              <a class="social-twitter" href="https://twitter.com/Hairoken" target="_blank">
                 <i class="ui-twitter"></i>
               </a>
-              <a class="social-youtube" href="#" target="_blank">
+              {{-- <a class="social-youtube" href="#" target="_blank">
                 <i class="ui-youtube"></i>
-              </a>
+              </a> --}}
             </div>
 
             <!-- Search -->

@@ -18,7 +18,7 @@ class TagController extends Controller
             $response = [
                 'success' => true,
                 'data' =>  $tag,
-                'message' => 'Berhasil!'
+                'message' => 'Proses..'
             ];
         return response()->json($response, 200);
     }
@@ -51,7 +51,7 @@ class TagController extends Controller
         $response = [
             'success' => true,
             'data' => $tag,
-            'message' => 'Berhasil Ditambahkan!'
+            'message' => 'Proses..'
         ];
         return response()->json($response, 200);
     }
@@ -97,7 +97,7 @@ class TagController extends Controller
         $response = [
             'success' => true,
             'data' => $tag,
-            'message' => 'Berhasil Dirubah!'
+            'message' => 'Proses..'
         ];
         return response()->json($response, 200);
     }
@@ -114,7 +114,7 @@ class TagController extends Controller
             $response = [
                 'success' => true,
                 'data' =>  $tag,
-                'message' => 'Berhasil Dihapus!'
+                'message' => 'Proses..'
             ];
         return response()->json($response, 200);
     }

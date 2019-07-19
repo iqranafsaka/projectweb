@@ -1817,8 +1817,7 @@ figcaption {
 	margin: 0 2px;
 	text-align: center;
 	border: 1px solid #e1e5e6;
-	color: #3A444D;
-	vertical-align: middle; }
+	color: #3A444D; }
 	.pagination__page:not(span):hover {
 		background-color: #E12A21;
 		border-color: transparent;

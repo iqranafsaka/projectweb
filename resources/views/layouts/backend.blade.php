@@ -32,7 +32,7 @@
 		<link rel="stylesheet" href="{{ asset('assets/backend/assets/css/layouts/vertical/menu-type/default.css')}}">
 	<!-- ======================= THEME COLOR STYLES ===========================-->
     <link rel="stylesheet" href="{{ asset('assets/backend/assets/css/layouts/vertical/themes/theme-a.css')}}">
-	<link rel="stylesheet" href="{{ asset('assets/frontend/css/stylecustom.css')}}">
+	<link rel="stylesheet" href="{{ asset('assets/frontend/custom/stylecustom.css')}}">
     @yield('css')
 </head>
 <body>

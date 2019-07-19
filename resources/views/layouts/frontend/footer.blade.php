@@ -10,10 +10,10 @@
             <p class="mt-20">We bring you the best Premium WordPress Themes.</p>
 
             <div class="socials mt-20">
-              <a href="#" class="social-facebook" aria-label="facebook"><i class="ui-facebook"></i></a>
-              <a href="#" class="social-twitter" aria-label="twitter"><i class="ui-twitter"></i></a>
-              <a href="#" class="social-google-plus" aria-label="google+"><i class="ui-google"></i></a>
-              <a href="#" class="social-instagram" aria-label="instagram"><i class="ui-instagram"></i></a>
+              <a href="https://web.facebook.com/nonocheese" class="social-facebook" aria-label="facebook"><i class="ui-facebook"></i></a>
+              <a href="https://twitter.com/Hairoken" class="social-twitter" aria-label="twitter"><i class="ui-twitter"></i></a>
+              {{-- <a href="#" class="social-google-plus" aria-label="google+"><i class="ui-google"></i></a> --}}
+              <a href="https://www.instagram.com/hairoken/" class="social-instagram" aria-label="instagram"><i class="ui-instagram"></i></a>
             </div>
           </div>
         </div>

@@ -36,14 +36,14 @@
     </nav>
 
     <div class="socials sidenav__socials "> 
-      <a class="social-facebook" href="#" target="_blank" aria-label="facebook">
+      <a class="social-facebook" href="https://web.facebook.com/nonocheese" target="_blank" aria-label="facebook">
         <i class="ui-facebook"></i>
       </a>
-      <a class="social-twitter" href="#" target="_blank" aria-label="twitter">
+      <a class="social-twitter" href="https://twitter.com/Hairoken" target="_blank" aria-label="twitter">
         <i class="ui-twitter"></i>
       </a>
-      <a class="social-youtube" href="#" target="_blank" aria-label="youtube">
+      {{-- <a class="social-youtube" href="#" target="_blank" aria-label="youtube">
         <i class="ui-youtube"></i>
-      </a>
+      </a> --}}
     </div>
   </header> <!-- end mobile sidenav -->
