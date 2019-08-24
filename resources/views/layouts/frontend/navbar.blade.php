@@ -68,7 +68,7 @@
             </div>
 
             <!-- Search -->
-            <div class="nav__right-item nav__search">
+            {{-- <div class="nav__right-item nav__search">
               <a href="#" class="nav__search-trigger" id="nav__search-trigger">
                 <i class="ui-search nav__search-trigger-icon"></i>
               </a>
@@ -81,7 +81,7 @@
                 </form>
               </div>
               
-            </div>
+            </div> --}}
 
           </div> <!-- end nav right -->  
       

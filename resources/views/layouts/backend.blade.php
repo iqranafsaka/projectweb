@@ -32,7 +32,6 @@
 		<link rel="stylesheet" href="{{ asset('assets/backend/assets/css/layouts/vertical/menu-type/default.css')}}">
 	<!-- ======================= THEME COLOR STYLES ===========================-->
     <link rel="stylesheet" href="{{ asset('assets/backend/assets/css/layouts/vertical/themes/theme-a.css')}}">
-	<link rel="stylesheet" href="{{ asset('assets/frontend/custom/stylecustom.css')}}">
     @yield('css')
 </head>
 <body>
@@ -135,7 +134,7 @@
         <!-- ================== GLOBAL VENDOR SCRIPTS ==================-->
         <script src="{{ asset('assets/backend/assets/vendor/modernizr/modernizr.custom.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/jquery/dist/jquery.min.js')}}"></script>
-		<script type="text/javascript" src="{{ asset('js/kategori.js')}}"></script> {{-- JSON DATA KATEGORI --}}
+		{{-- <script type="text/javascript" src="{{ asset('js/kategori.js')}}"></script> JSON DATA KATEGORI --}}
 		<script type="text/javascript" src="{{ asset('js/artikel.js')}}"></script> {{-- JSON DATA Artikel --}}
 		<script type="text/javascript" src="{{ asset('js/tag.js')}}"></script> {{-- JSON DATA TAG --}}
         <script src="{{ asset('assets/backend/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
@@ -155,6 +154,7 @@
         <script src="{{ asset('assets/backend/assets/vendor/flot.curvedlines/curvedLines.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/datatables.net/js/jquery.dataTables.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/vendor/datatables.net-bs4/js/dataTables.bootstrap4.js')}}"></script>
+		<script src="{{ asset('assets/backend/assets/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
         <!-- ================== GLOBAL APP SCRIPTS ==================-->
         <script src="{{ asset('assets/backend/assets/js/global/app.js')}}"></script>
         <!-- ================== PAGE LEVEL SCRIPTS ==================-->
@@ -165,6 +165,8 @@
         <script src="{{ asset('assets/backend/assets/js/cards/users-chart.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/js/cards/bounce-rate-chart.js')}}"></script>
         <script src="{{ asset('assets/backend/assets/js/cards/session-duration-chart.js')}}"></script>
+		<!-- ================== PAGE LEVEL COMPONENT SCRIPTS ==================-->
+		<script src="{{asset('assets/backend/assets/js/components/sweetalert2.js')}}"></script>
         <script> (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function() {

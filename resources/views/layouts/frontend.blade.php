@@ -175,6 +175,7 @@
   <script type="text/javascript" src="{{ asset('assets/frontend/js/modernizr.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('assets/frontend/js/scripts.js')}}"></script>
   @yield('js')
+  @stack('scripts')
 
 
   <script type="text/javascript">

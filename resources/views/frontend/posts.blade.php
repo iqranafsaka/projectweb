@@ -127,8 +127,8 @@
                     </article>
                   </div>
                 @endforeach
-                {{ $artikel->links() }}
               </div>
+              {{ $artikel->links() }}
             </div> <!-- end posts -->
 
             <!-- Sidebar -->

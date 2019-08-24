@@ -66,7 +66,7 @@
 
                     <!-- Widget socials -->
                     <div class="widget widget-socials">
-                      <h4 class="widget-title">Keep up with Neotech</h4>
+                      <h4 class="widget-title">Social Media's</h4>
                       <ul class="socials social">
                         {{-- isi dari AJAX SOCIAL --}}
                       </ul>

@@ -1801,7 +1801,7 @@ figcaption {
 /*-------------------------------------------------------*/
 /* Pagination
 /*-------------------------------------------------------*/
-.pagination__nav {
+.pagination {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

@@ -75,7 +75,8 @@ class TagController extends Controller
      */
     public function edit($id)
     {
-        //
+        $tag = Tag::findOrFail($id);
+        return view('backend.tag.edit', compact('tag'));
     }
 
     /**

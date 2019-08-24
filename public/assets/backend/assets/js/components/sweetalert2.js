@@ -57,7 +57,7 @@
     //== SweetAlert Demo 6
     $('#sweetalert_demo_6').on('click', function(e) {
       swal({
-        position: 'top-end',
+        position: 'center',
         type: 'success',
         title: 'Your work has been saved',
         showConfirmButton: false,

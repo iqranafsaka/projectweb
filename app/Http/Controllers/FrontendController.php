@@ -10,7 +10,7 @@ use App\Artikel;
 class FrontendController extends Controller
 {
     public function index(){
-        $artikel = Artikel::with('tag', 'kategori', 'user')->get();
+        $artikel = Artikel::orderBy('created_at', 'desc')->get();
         return view('frontend.index', compact('artikel'));
     } 
 
@@ -25,7 +25,7 @@ class FrontendController extends Controller
 
     
     public function blog(){
-        $artikel = Artikel::orderBy('created_at', 'desc')->paginate(5);
+        $artikel = Artikel::orderBy('created_at', 'desc')->paginate(2);
         $kategori = Kategori::all();
         $tag = Tag::all();
         return view('frontend.posts', compact('artikel', 'kategori', 'tag'));
