@@ -21,7 +21,7 @@
                     <p>
                         Kategori :
                         <button class="btn btn-rounded btn-sm btn-info">
-                            {{ $artikel->kategori->nama_tag }}
+                            {{ $artikel->kategori->nama_kategori }}
                         </button>
                     </p>
 
@@ -39,7 +39,7 @@
                     </p>
 
                     <p>
-                        <a href="#" class="btn btn-outline btn-block btn-rounded btn-info">
+                        <a href="/posts/{{$artikel->slug}}" class="btn btn-outline btn-block btn-rounded btn-info">
                             <i class="la la-paper-plame"></i>
                                 Lihat Artikel
                             <i class="zmdi zmdi-airplane zmdi-bc-tw"></i>

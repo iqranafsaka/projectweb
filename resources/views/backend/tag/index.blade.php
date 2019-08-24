@@ -164,15 +164,14 @@ $(document).ready(function() {
         var id = $(this).data("id");
         // alert(id)
         Swal.fire({
-            title: "Are you sure?",
-            text: "You will not be able to recover this imaginary file!",
-            type: "warning",
-            showCancelButton: true,
+            title: "Data yang anda pilih telah dihapus!",
+            type: "success",
             confirmButtonColor: "#DD6B55",
-            confirmButtonText: "Yes, delete it!",
+            confirmButtonText: "OK",
+            allowOutsideClick: false,
+            closeOnClickOutside: false,
             closeOnConfirm: false
-        }).then(
-            function(isConfirm){
+        }).then(function(isConfirm){
            if (isConfirm) {
             $.ajax({
                 url: '/api/tag/' + id,
@@ -182,14 +181,11 @@ $(document).ready(function() {
                     id: id
                 },
                 success: function (result) {
-                    swal("Done!","It was succesfully deleted!","success");
                     location.reload();
                 }
                 
-            });
-          }else{
-                swal("Cancelled", "Your imaginary file is safe", "error");
-          } 
+            })
+          }
        })
     })
 

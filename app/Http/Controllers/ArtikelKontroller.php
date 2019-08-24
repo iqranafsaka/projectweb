@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Kategori;
 use App\Tag;
 use App\Artikel;
+use Session;
 use Auth;
 use File;
 
@@ -18,7 +19,7 @@ class ArtikelKontroller extends Controller
      */
     public function index()
     {
-        $artikel = Artikel::with('tag', 'kategori', 'user')->get();
+        $artikel = Artikel::orderBy('created_at', 'desc')->get();
         return view('backend.artikel.index', compact('artikel'));
     }
 
@@ -66,8 +67,14 @@ class ArtikelKontroller extends Controller
         }
         $artikel->save();
         $artikel->tag()->attach($request->tag);
-        
+
+        Session::flash('flash_notification', [
+            'level' => 'success',
+            'message' => 'Berhasil Menyimpan data <b>' . $artikel->judul . '</b>'
+        ]);
         return redirect()->route('artikel.index');
+        
+
     }
 
     /**
@@ -78,7 +85,8 @@ class ArtikelKontroller extends Controller
      */
     public function show($id)
     {
-        //
+        $artikel = Artikel::findOrFail($id);
+        return view('backend.artikel.show', compact('artikel'));
     }
 
     /**
@@ -142,6 +150,10 @@ class ArtikelKontroller extends Controller
         $artikel->save();
         $artikel->tag()->sync($request->tag);
 
+        Session::flash('flash_notification', [
+            'level' => 'warning',
+            'message' => 'Berhasil Menyimpan data <b>' . $artikel->judul . '</b>'
+        ]);
         return redirect()->route('artikel.index');
     }
 
@@ -166,9 +178,13 @@ class ArtikelKontroller extends Controller
                 //File sudah dihapus/tidak ada
             }
         }
+
         $artikel->tag()->detach($artikel->id);
         $artikel->delete();
-
+        Session::flash('flash_notification', [
+            'level' => 'danger',
+            'message' => 'Berhasil menghapus data <b>' . $blog->judul . '</b>'
+        ]);
         return redirect()->route('artikel.index');
     }
 
