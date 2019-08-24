@@ -39,33 +39,6 @@
   <!-- Bg Overlay -->
   <div class="content-overlay"></div>
 
-  <!-- Subscribe Modal -->
-  <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="subscribeModalLabel">Subscribe for Newsletter</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form class="mc4wp-form" method="post">
-            <div class="mc4wp-form-fields">
-              <p>
-                <i class="mc4wp-form-icon ui-email"></i>
-                <input type="email" name="EMAIL" placeholder="Your email" required="">
-              </p>
-              <p>
-                <input type="submit" class="btn btn-md btn-color" value="Subscribe">
-              </p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div> <!-- end subscribe modal -->
-  
 
   <!-- Mobile Sidenav -->    
   
@@ -101,34 +74,12 @@
                     
                     <!-- Widget socials -->
                     <div class="widget widget-socials">
-                        <h4 class="widget-title">Keep up with Neotech</h4>
-                        <ul class="socials">
-                        <li>
-                            <a class="social-facebook" href="#" title="facebook" target="_blank">
-                            <i class="ui-facebook"></i>
-                            <span class="socials__text">Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-twitter" href="#" title="twitter" target="_blank">
-                            <i class="ui-twitter"></i>
-                            <span class="socials__text">Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-google-plus" href="#" title="google" target="_blank">
-                            <i class="ui-google"></i>
-                            <span class="socials__text">Google+</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-instagram" href="#" title="instagram" target="_blank">
-                            <i class="ui-instagram"></i>
-                            <span class="socials__text">Instagram</span>
-                            </a>
-                        </li>
-                        </ul>
-                    </div> <!-- end widget socials -->
+                      <h4 class="widget-title">Social Media's</h4>
+                      <ul class="socials social">
+                        {{-- isi dari AJAX SOCIAL --}}
+                      </ul>
+                    </div> 
+                    <!-- end widget socials -->
 
                     <!-- Widget Banner -->
                     <div class="widget widget_media_image">

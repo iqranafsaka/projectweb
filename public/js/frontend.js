@@ -5,8 +5,6 @@ $(function() {
         }
     });
     var alamat = "/api/artikel";
-    var alamat_kategori = "/api/kategori";
-    var alamat_tag = "/api/tag";
 
     // Get LATEST POST
     $.ajax({
@@ -21,18 +19,14 @@ $(function() {
                     <div class="entry__img-holder post-list__img-holder">
                         <a href="posts/${value.slug}">
                             <div class="thumb-container">
-                            <img src="../assets/img/artikel/${
-                                value.foto
-                            }" class="entry__img lazyload" alt="" />
+                            <img src="../assets/img/artikel/${value.foto}" class="entry__img lazyload" alt="" />
                             </div>
                         </a>
                         </div>
 
                         <div class="entry__body post-list__body">
                         <div class="entry__header">
-                            <a href="categories.html" class="entry__meta-category">${
-                                value.kategori.nama_kategori
-                            }</a>
+                            <a href="/posts-kategori/${value.kategori.slug}"" class="entry__meta-category">${value.kategori.nama_kategori}</a>
                             <h2 class="entry__title">
                             <a href="posts/${value.slug}">${value.judul}</a>
                             </h2>
@@ -70,9 +64,7 @@ $(function() {
                         <div class="widget-popular-posts__img-holder">
                             <div class="thumb-container">
                             <a href="/posts/${value.slug}">
-                                <img src="../assets/img/artikel/${
-                                    value.foto
-                                }" alt="" style="height:45px;" class="lazyload">
+                                <img src="../assets/img/artikel/${value.foto}" alt="" style="height:45px;" class="lazyload">
                             </a>
                             </div>
                         </div>

@@ -26,13 +26,13 @@
                 <a href="/">Home</a>
               </li>
 
-              <li class="nav__dropdown">
+              {{-- <li class="nav__dropdown">
                 <a href="/indexcomu">Community</a>
                 <ul class="nav__dropdown-menu">
                   <li><a href="/indexcomu">Home</a></li>
                   <li><a href="/discussion">Discussion</a></li>
                 </ul>
-              </li>
+              </li> --}}
 
               <li class="nav__dropdown">
                   <a href="/posts">Posts</a>

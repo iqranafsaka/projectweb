@@ -37,35 +37,7 @@
   </div>
   
   <!-- Bg Overlay -->
-  <div class="content-overlay"></div>
-
-  <!-- Subscribe Modal -->
-  <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="subscribeModalLabel">Subscribe for Newsletter</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form class="mc4wp-form" method="post">
-            <div class="mc4wp-form-fields">
-              <p>
-                <i class="mc4wp-form-icon ui-email"></i>
-                <input type="email" name="EMAIL" placeholder="Your email" required="">
-              </p>
-              <p>
-                <input type="submit" class="btn btn-md btn-color" value="Subscribe">
-              </p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div> <!-- end subscribe modal -->
-  
+  <div class="content-overlay"></div>  
 
   <!-- Mobile Sidenav -->    
   
@@ -89,18 +61,18 @@
         <div class="container">
 
           <h1 class="page-title">About</h1>
-          <img data-src="{{ asset('assets/frontend/img/blog/about_page_title.jpg')}}" src="{{ asset('assets/frontend/img/blog/about_page_title.jpg')}}" alt="" class="lazyload contact__img">
-          
+          <center>
+          <img data-src="{{ asset('assets/img/storage/lab.jpg')}}" src="{{ asset('assets/frontend/img/blog/about_page_title.jpg')}}" alt="" class="lazyload contact__img">
+          </center>
+
           <div class="row justify-content-md-center">
             <div class="col-lg-8">
               <div class="entry__article">
-                <p>We are optimists who love to work together and Creating an awesome clothes store with this Theme is easy than you can imagine. Just a handful of products, including the goal-setting SELF Journal, which he initially launched on Kickstarter.</p>
-                <p>Phasellus varius turpis quis quam vulputate, sed ultricies ex gravida. Suspendisse leo ipsum, porttitor sed ullamcorper id, pretium vel urna. Donec sit amet mauris leo. Sed nibh odio, lacinia eu condimentum eu, accumsan id elit. Sed porttitor pretium ipsum, et lacinia quam faucibus fringilla. Vivamus a augue maximus, gravida ante eget, pulvinar est.</p>
+                <p>Kami team 1 PKL Pertama SMK ASSALAAM, Membuat Website ini dengan Tujuan Mempelajari beberapa pelajaran baru dari Pembelajaran saat PKL.</p>
+                <p>Di Website ini Kami Membuat untuk Memperlihatkan info-info seputar Game dan Movie yang bisa di diskusikan oleh Pembaca lainnya. </p>
 
-                <blockquote><p>“Build A BIGGER Business award, a competition that recognizes businesses.”</p></blockquote>
-
-                <p>Phasellus varius turpis quis quam vulputate, sed ultricies ex gravida. Suspendisse leo ipsum, porttitor sed ullamcorper id, pretium vel urna. Donec sit amet mauris leo. Sed nibh odio, lacinia eu condimentum eu, accumsan id elit. Sed porttitor pretium ipsum, et lacinia quam faucibus fringilla. Vivamus a augue maximus, gravida ante eget, pulvinar est.</p>
-                <p>Because of their hustle, for two years in a row, Best Self Co has received Shopify’s. To give side hustlers a helping hand, Brouwer will share more of the hard work and planning that went into this ecommerce success.</p>
+                <blockquote><p>“Kami Mencoba Membuat Website Semaksimal Mungkin.”</p></blockquote>
+              
               </div>             
 
             </div>
