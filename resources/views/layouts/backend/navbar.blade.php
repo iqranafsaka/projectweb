@@ -31,24 +31,17 @@
     <ul class="navbar-nav nav-right">
         <li class="nav-item dropdown">
             <a class="nav-link nav-pill user-avatar" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <img src="{{ asset('assets/backend/assets/img/avatars/1.jpg')}}" class="w-35 rounded-circle" alt="Albert Einstein">
+                <img src="{{ asset('assets/img/storage/blank_profile.png')}}" class="w-35 rounded-circle" alt="Albert Einstein">
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-accout">
                 <div class="dropdown-header pb-3">
                     <div class="media d-user">
-                        <img class="align-self-center mr-3 w-40 rounded-circle" src="{{ asset('assets/backend/assets/img/avatars/1.jpg')}}" alt="Albert Einstein">
                         <div class="media-body">
                             <h5 class="mt-0 mb-0">{{ Auth::user()->name }}</h5>
                             <span>{{ Auth::user()->email }}</span>
                         </div>
                     </div>
                 </div>
-                <a class="dropdown-item" href="apps.messages.html"><i class="icon dripicons-mail"></i> Message <span class="badge badge-accent rounded-circle w-15 h-15 p-0 font-size-10">4</span></a>
-            <a class="dropdown-item" href="pages.profile.html"><i class="icon dripicons-user"></i> Profile</a>
-                <a class="dropdown-item" href="pages.my-account.html"><i class="icon dripicons-gear"></i> Account Settings </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"><i class="icon dripicons-lock"></i> Lock Account</a>
-
 
                 {{-- Logout --}}
                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

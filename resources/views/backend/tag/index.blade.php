@@ -16,9 +16,9 @@
             <div class="card">
                 <div class="card-header">
                     Tag Artikel
-                    <button class="btn btn-sm btn-success float-right" data-toggle="modal" data-target="#modalTambahTag">Tambah</button>
+                    <button class="float-right btn btn-primary btn-rounded btn-outline" data-toggle="modal" data-target="#modalTambahTag"><i class="zmdi zmdi-collection-plus zmdi-hc-fw"></i></button>
                 </div>
-
+                
                 <div class="card-body">
                     <br>
                     <div class="table-responsive">
@@ -73,13 +73,13 @@ $(document).ready(function() {
                 { data: 'slug', name: 'slug' },
                 { data: 'id', render : function (data, type, row, meta) {
                     return `
-                    <button type="button" class="btn btn-sm btn-success edit-tag"
+                    <button type="button" class="btn btn-warning btn-rounded btn-outline btn-sm edit-tag"
                         data-target="#modalEditTag"
                         data-toggle="modal"
                         data-id="${row.id}"
                         data-nama_tag="${row.nama_tag}"
-                        >Edit</button>
-                        <button class="btn btn-sm btn-danger" data-id="${row.id}" id="hapus-dataTag">Hapus</button>
+                        ><i class="zmdi zmdi-edit zmdi-hc-fw"></i></button>
+                        <button class="btn btn-danger btn-rounded btn-outline btn-sm" data-id="${row.id}" id="hapus-dataTag"><i class="zmdi zmdi-delete zmdi-hc-fw"></i></button>
                     `;
                     }
                 }

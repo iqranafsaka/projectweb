@@ -95,7 +95,7 @@
 
                     <br><br>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info btn-rounded btn-outline" data-qt-block="body">Simpan Data</button>
+                        <button type="submit" class="btn btn-primary btn-rounded btn-outline" data-qt-block="body">Simpan Data</button>
                     </div>
                     </form>
                 </div>

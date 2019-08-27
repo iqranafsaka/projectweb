@@ -18,8 +18,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary tombol-simpan">Save changes</button>
+                    <button type="button" class="btn btn-secondary btn-rounded btn-outline" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary btn-rounded btn-outline tombol-simpan">Save changes</button>
 
                 </div>
             </form>

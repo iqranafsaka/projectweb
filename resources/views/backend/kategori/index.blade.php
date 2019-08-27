@@ -16,9 +16,9 @@
             <div class="card">
                 <div class="card-header">
                     Kategori Artikel
-                    <button class="btn btn-sm btn-success float-right" data-toggle="modal" data-target="#modalTambahKategori">Tambah</button>
+                    <button class="float-right btn btn-primary btn-rounded btn-outline" data-toggle="modal" data-target="#modalTambahKategori"><i class="zmdi zmdi-collection-plus zmdi-hc-fw"></i></button>
                 </div>
-
+                
                 <div class="card-body">
                     <br>
                     <div class="table-responsive">
@@ -73,13 +73,13 @@ $(document).ready(function() {
                 { data: 'slug', name: 'slug' },
                 { data: 'id', render : function (data, type, row, meta) {
                     return `
-                    <button type="button" class="btn btn-sm btn-success edit-kategori"
+                    <button type="button" class="btn btn-warning btn-rounded btn-outline btn-sm edit-kategori"
                         data-target="#modalEditKategori"
                         data-toggle="modal"
                         data-id="${row.id}"
                         data-nama_kategori="${row.nama_kategori}"
-                        >Edit</button>
-                        <button class="btn btn-sm btn-danger" data-id="${row.id}" id="hapusDataKategori">Hapus</button>
+                        ><i class="zmdi zmdi-edit zmdi-hc-fw"></i></button>
+                        <button class="btn btn-danger btn-rounded btn-outline btn-sm" data-id="${row.id}" id="hapusDataKategori"><i class="zmdi zmdi-delete zmdi-hc-fw"></i></button>
                     `;
                     }
                 }
